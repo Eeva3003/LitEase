@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #4b0082, #000000, #191970); /* Purple, Black, Navy */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+.summarize-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 60px; /* Adjusted padding for larger box size */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(45deg, #4b0082, #000000, #191970); /* Purple, Black, Navy */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+.summarize-text {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Horizontally align buttons with space in between */
+}
+
+.generate-button {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #f0f8ff, #87cefa, #e6e6fa); /* Whitish, SkyBlue, Lavender gradient */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.generate-button:hover {
+    background: linear-gradient(45deg, #32cd32, #008000, #006400); /* Green gradient on hover */
+    color: #fff; /* White text color on hover */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

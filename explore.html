@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Upload Your PDF</title>
+</head>
+<body>
+    <div class="upload-container">
+        <h2 class="upload-text">Drop your PDF file below</h2>
+        <div class="drop-zone" id="dropZone">
+            <span class="drop-text">Drag and drop or click to select</span>
+            <input type="file" id="fileInput" accept=".pdf" />
+        </div>
+        <button class="upload-button" onclick="checkUpload()">Check Upload Status</button>
+        <a class="upload-back" href="index.html">back</a>
+    </div>
+
+    <div class="upload-status" id="uploadStatus"></div> <!-- Upload status outside the main container -->
+    <script>
+        function checkUpload() {
+            window.location.href = 'page3.html';
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="upload.js"></script>
+</body>
+</html>

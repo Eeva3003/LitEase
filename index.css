@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+    height: 100vh;
+    background: linear-gradient(45deg, #4b0082, #000000, #191970); /* Purple, Black, Navy */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.big-text {
+    font-size: 5em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.description,
+.features,
+.interface {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features strong,
+.interface strong {
+    color: #ecf0f1; /* Light gray for stronger emphasis */
+}
+
+.arrow {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    background-color: #2c3e50; /* Dark gray for button background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: #34495e; /* Slightly darker gray on hover */
+    color: #fff;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

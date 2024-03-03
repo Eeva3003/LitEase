@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif; /* Change to Roboto font */
+    background: linear-gradient(45deg, #4b0082, #000000, #191970); /* Purple, Black, Navy */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+.summary-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #000;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.summary-text {
+    font-size: 48px; /* Increase title font size */
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary-button {
+    display: block;
+    margin: 15px auto; /* Increased margin for both buttons */
+    width: 300px; /* Increased width */
+    height: 80px; /* Increased height */
+    line-height: 80px; /* Center text vertically */
+    font-size: 24px; /* Increased font size */
+    font-weight: bold; /* Added bold font weight */
+    text-decoration: none; /* Remove default link underline */
+    color: #4b0082; /* Purplish-Black text color */
+    background: linear-gradient(45deg, #f0f8ff, #87cefa, #e6e6fa); /* Whitish, SkyBlue, Lavender gradient */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.summary-button:hover {
+    background: linear-gradient(45deg, #d3d3d3, #add8e6, #c0c0c0); /* Slightly darker gradient on hover */
+}
